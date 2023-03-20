@@ -75,7 +75,7 @@ div {
 	min-width: 240px; /**/
 	margin: 10px;
 	padding: 20px;
-	background-color: #fff;
+	background-color: #000;
 }
 
 .highlight_stream {
@@ -144,6 +144,37 @@ li {
 .border {
     border: solid 5px #ccc;
 }
+
+
+.container {
+	display: flex;		/* makes container a flexbox*/
+	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
+	box-sizing:border-box;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1050px;	
+}
+
+.box {
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 240px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.makeRed {
+	background-color: red;
+	color: white;
+}
+
+.makeBlue {
+	background-color: blue;
+	color: lightblue;
+}
+
 
 @media screen and (max-width: 700px) {
 	ul {
